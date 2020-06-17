@@ -28,7 +28,11 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
     gulp.watch("src/sass/**/*.+(scss|sass)", gulp.parallel('styles'));
+<<<<<<< HEAD
     gulp.watch("src/*.html").on("change", browserSync.reload);
 });
+=======
+})
+>>>>>>> master
 
 gulp.task('default', gulp.parallel('watch', 'server', 'styles'));
